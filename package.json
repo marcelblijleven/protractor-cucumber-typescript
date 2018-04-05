@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "./node_modules/tslint/bin/tslint --config tslint.json --project tsconfig.json",
-    "pree2e": "webdriver-manager update",
+    "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor config/base.conf.js"
   },
   "devDependencies": {

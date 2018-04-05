@@ -12,8 +12,8 @@ exports.config = {
   allScriptsTimeout: 15000,
   beforeLaunch: () => {
     console.log(
-      '+----------------------------------------+' +
-      '|          Launching protractor          |' +
+      '+----------------------------------------+\n' +
+      '|          Launching protractor          |\n' +
       '+----------------------------------------+'
     );
   },
