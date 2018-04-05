@@ -19,3 +19,23 @@ chromedriver.
 
 ## Example tests
 The e2e script will run a basic feature against the search functionality on the Google homepage.
+
+`tests/features/example.feature`
+```feature
+Feature: Example
+
+    Scenario: Searching Google
+        Given I am on the Google homepage
+        When I search for "SpaceX"
+        Then I see "SpaceX" in the browser title
+
+```
+
+The corresponding steps are defined in `tests/steps/example.steps.ts`.
+
+Example:
+```ts
+Then('I see {string} in the browser title', async (string: string) => {
+  await expect(this.searchResultPage.title()).to.eventually.contain(string);
+});
+```
