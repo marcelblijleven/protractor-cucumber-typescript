@@ -16,3 +16,6 @@ yarn run e2e
 
 The e2e script will also call `webdriver-manager update --standalone false --gecko false` which will download/update
 chromedriver.
+
+## Example tests
+The e2e script will run a basic feature against the search functionality on the Google homepage.
