@@ -4,6 +4,11 @@ Boilerplate for protractor with cucumber (version 4 and up) and typescript
 # Getting started
 I like to use yarn, but you can use npm instead if you want to.
 
+Make sure you have `protractor` and `typescript` globally installed:
+```bash
+yarn global add protractor typescript
+```
+
 After cloning this repository to your computer, run the following command to install all dependencies:
 ```bash
 yarn install
